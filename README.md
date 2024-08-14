@@ -72,6 +72,30 @@ The model used in this application is based on a Vision-Encoder-Decoder architec
 
 - **GPT-2** is part of the Transformer family of models and is designed for generating natural language text. It uses a multi-layer architecture with self-attention mechanisms to understand and generate text sequences. GPT-2's ability to generate text that is contextually relevant and coherent makes it ideal for tasks like image captioning, where the generated text needs to accurately describe the visual content.
 
+## Explanation of Parameters
+
+The application allows users to adjust several parameters that influence how captions are generated. Below is a detailed explanation of each parameter:
+
+### 1. Max Caption Length
+- **Description:** This parameter sets the maximum length of the generated caption, i.e., the maximum number of tokens (words or subwords) in the output caption.
+- **Effect:** A shorter max length will result in more concise captions, while a longer max length allows for more detailed descriptions.
+
+### 2. Number of Beams
+- **Description:** This parameter controls the number of beams used in the beam search algorithm during text generation.
+- **Effect:** Increasing the number of beams generally improves the quality of the generated caption by considering more possible sequences during generation. However, higher values may increase computational cost and generation time.
+
+### 3. Temperature
+- **Description:** Temperature is a parameter that controls the randomness of predictions by scaling the logits before applying softmax.
+- **Effect:** A lower temperature makes the model more confident and conservative (less randomness), while a higher temperature increases diversity by making the model more likely to sample from less probable outputs.
+
+### 4. Top-k
+- **Description:** Top-k sampling limits the next token selection to the k most likely tokens.
+- **Effect:** Setting a lower top-k value restricts the model to choose from only the most likely tokens, reducing randomness. A higher top-k value increases diversity by allowing the model to consider a broader range of possible tokens.
+
+### 5. Top-p (Nucleus Sampling)
+- **Description:** Top-p sampling, or nucleus sampling, selects the smallest set of tokens whose cumulative probability is greater than or equal to the top-p value.
+- **Effect:** This parameter provides a dynamic approach to controlling diversity. Lower top-p values restrict sampling to the most probable tokens, while higher values allow for more diverse and creative outputs.
+
 ## Conclusion
 
-The Enhanced Image Captioning project demonstrates the power of combining advanced deep learning models to tackle complex tasks such as generating descriptive captions for images. By integrating the Vision Transformer with GPT-2, the application is capable of producing high-quality captions that are both accurate and contextually appropriate. The use of PyTorch and Hugging Face Transformers libraries enables efficient model deployment, while Streamlit provides a seamless interface for users to interact with the application.
+This project demonstrates the power of combining advanced deep learning models to tackle complex tasks such as generating descriptive captions for images. By integrating the Vision Transformer with GPT-2, the application is capable of producing high-quality captions that are both accurate and contextually appropriate. The use of PyTorch and Hugging Face Transformers libraries enables efficient model deployment, while Streamlit provides a seamless interface for users to interact with the application.
