@@ -14,10 +14,12 @@ Enhanced Image Captioning is a web application that leverages advanced deep lear
 
 
 <img width="1858" alt="skyman" src="https://github.com/user-attachments/assets/3c430035-808b-4ab8-be31-4ae1650a46f9"><br />
+<br />
 
 
 
 <img width="1856" alt="kiddog" src="https://github.com/user-attachments/assets/6d49f211-0002-47e9-b149-c5776dbfe35b"><br />
+<br />
 
 
 
