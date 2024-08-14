@@ -9,11 +9,11 @@ App for generating descriptions based on images
 Enhanced Image Captioning is a web application that leverages advanced deep learning models to generate descriptive captions for images. The application is built using Streamlit, PyTorch, and the Hugging Face Transformers library. It integrates a Vision-Encoder-Decoder architecture, specifically utilizing the ViT-GPT2 model, which combines the Vision Transformer (ViT) as the encoder and GPT-2 as the decoder.
 
 
-## Examples \
+## Examples <br />
 
 
 
-<img width="1858" alt="skyman" src="https://github.com/user-attachments/assets/3c430035-808b-4ab8-be31-4ae1650a46f9"> \
+<img width="1858" alt="skyman" src="https://github.com/user-attachments/assets/3c430035-808b-4ab8-be31-4ae1650a46f9">  <br />
 
 
 
